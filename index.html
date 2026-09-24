@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DBS Digital Business Store | L'innovation au service de votre quotidien</title>
+  <meta name="description" content="Boutique en ligne DBS - Produits de qualité, livraison rapide partout dans le monde, paiement sécurisé.">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <span><i class="fas fa-truck"></i> Livraison rapide partout dans le monde</span>
+        <span class="separator">|</span>
+        <span><i class="fas fa-shield-alt"></i> Paiement sécurisé</span>
+        <span class="separator">|</span>
+        <span><i class="fas fa-headset"></i> Service client 7j/7 - 24h/24</span>
+      </div>
+      <div class="top-bar-right">
+        <div class="lang-currency">
+          <select id="language-select" aria-label="Langue">
+            <option value="fr">FR</option>
+            <option value="en">EN</option>
+            <option value="es">ES</option>
+            <option value="ar">AR</option>
+          </select>
+          <select id="currency-select" aria-label="Devise">
+            <option value="XOF">FCFA</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/logo.png" alt="DBS Digital Business Store" height="48" onerror="this.style.display='none'">
+        <strong style="font-size:20px;color:#D4A017">DBS</strong>
+      </a>
+
+      <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Rechercher un produit, une marque, une catégorie..." aria-label="Recherche">
+        <button type="button" id="search-btn" aria-label="Rechercher"><i class="fas fa-search"></i></button>
+      </div>
+
+      <div class="header-actions">
+        <a href="account.html" class="action-btn" title="Mon compte">
+          <i class="fas fa-user"></i>
+          <span>Compte</span>
+        </a>
+        <a href="track-order.html" class="action-btn" title="Suivre ma commande">
+          <i class="fas fa-box"></i>
+          <span>Suivi</span>
+        </a>
+        <a href="contact.html" class="action-btn" title="Contact">
+          <i class="fas fa-envelope"></i>
+          <span>Contact</span>
+        </a>
+        <a href="cart.html" class="action-btn cart-btn" title="Panier">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count" id="cart-count">0</span>
+        </a>
+      </div>
+
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <nav class="main-nav">
+      <div class="container">
+        <ul class="nav-list">
+          <li class="has-dropdown">
+            <a href="#"><i class="fas fa-th-large"></i> Toutes les catégories <i class="fas fa-chevron-down"></i></a>
+            <div class="dropdown-menu">
+              <a href="category.html?cat=electronique">Électronique</a>
+              <a href="category.html?cat=mode">Mode & Accessoires</a>
+              <a href="category.html?cat=maison">Maison & Lifestyle</a>
+              <a href="category.html?cat=beaute">Beauté & Santé</a>
+              <a href="category.html?cat=sport">Sport & Loisirs</a>
+              <a href="category.html?cat=hightech">High-Tech</a>
+            </div>
+          </li>
+          <li><a href="index.html" class="active">Accueil</a></li>
+          <li><a href="category.html?cat=electronique">Électronique</a></li>
+          <li><a href="category.html?cat=mode">Mode & Accessoires</a></li>
+          <li><a href="category.html?cat=maison">Maison & Lifestyle</a></li>
+          <li><a href="category.html?cat=promotions">Promotions</a></li>
+          <li><a href="about.html">À propos</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-slider">
+      <div class="hero-slide active">
+        <div class="container hero-content">
+          <div class="hero-text">
+            <span class="badge">Nouveauté 2026</span>
+            <h1>Des produits de qualité<br>pour un quotidien <span class="highlight">meilleur</span></h1>
+            <p>Électronique • Mode & Accessoires • Maison • Lifestyle</p>
+            <a href="category.html?cat=all" class="btn btn-primary">Découvrir maintenant <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&q=80" alt="Produits DBS" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-features">
+      <div class="container">
+        <div class="feature-item">
+          <i class="fas fa-award"></i>
+          <span>Meilleure qualité<br>Garantie</span>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-shipping-fast"></i>
+          <span>Livraison rapide<br>Partout dans le monde</span>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-lock"></i>
+          <span>Paiement sécurisé<br>DBS Payment</span>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-headset"></i>
+          <span>Assistance 7j/7<br>WhatsApp & Contact</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="categories section">
+    <div class="container">
+      <div class="categories-grid">
+        <a href="category.html?cat=electronique" class="category-card">
+          <div class="cat-icon"><i class="fas fa-mobile-alt"></i></div>
+          <span>Électronique</span>
+        </a>
+        <a href="category.html?cat=mode" class="category-card">
+          <div class="cat-icon"><i class="fas fa-tshirt"></i></div>
+          <span>Mode</span>
+        </a>
+        <a href="category.html?cat=accessoires" class="category-card">
+          <div class="cat-icon"><i class="fas fa-headphones"></i></div>
+          <span>Accessoires</span>
+        </a>
+        <a href="category.html?cat=maison" class="category-card">
+          <div class="cat-icon"><i class="fas fa-home"></i></div>
+          <span>Maison</span>
+        </a>
+        <a href="category.html?cat=beaute" class="category-card">
+          <div class="cat-icon"><i class="fas fa-spa"></i></div>
+          <span>Beauté & Santé</span>
+        </a>
+        <a href="category.html?cat=sport" class="category-card">
+          <div class="cat-icon"><i class="fas fa-running"></i></div>
+          <span>Sport & Loisirs</span>
+        </a>
+        <a href="category.html?cat=hightech" class="category-card">
+          <div class="cat-icon"><i class="fas fa-laptop"></i></div>
+          <span>High-Tech</span>
+        </a>
+        <a href="category.html?cat=autres" class="category-card">
+          <div class="cat-icon"><i class="fas fa-th"></i></div>
+          <span>Autres</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="products-section section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Produits en vedette</h2>
+        <a href="category.html?cat=all" class="view-all">Voir tout <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="products-grid" id="featured-products"></div>
+    </div>
+  </section>
+
+  <section class="collections section">
+    <div class="container">
+      <div class="collections-grid">
+        <a href="category.html?cat=electronique" class="collection-banner collection-1">
+          <div class="collection-content">
+            <h3>Collection Électronique</h3>
+            <p>Technologie et innovation</p>
+            <span class="btn-outline">Découvrir →</span>
+          </div>
+        </a>
+        <a href="category.html?cat=mode" class="collection-banner collection-2">
+          <div class="collection-content">
+            <h3>Collection Mode</h3>
+            <p>Style & Élégance</p>
+            <span class="btn-outline">Découvrir →</span>
+          </div>
+        </a>
+        <a href="category.html?cat=maison" class="collection-banner collection-3">
+          <div class="collection-content">
+            <h3>Maison & Lifestyle</h3>
+            <p>Confort au quotidien</p>
+            <span class="btn-outline">Découvrir →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="products-section section bg-light">
+    <div class="container">
+      <div class="two-columns">
+        <div>
+          <div class="section-header">
+            <h2>Meilleures ventes</h2>
+            <a href="#" class="view-all">Voir tout</a>
+          </div>
+          <div class="products-grid small" id="bestsellers"></div>
+        </div>
+        <div>
+          <div class="section-header">
+            <h2>Nouveautés</h2>
+            <a href="#" class="view-all">Voir tout</a>
+          </div>
+          <div class="products-grid small" id="new-arrivals"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials section">
+    <div class="container">
+      <h2 class="text-center">Ce que disent nos clients</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Produits de très bonne qualité et livraison rapide. Je recommande vivement DBS !"</p>
+          <div class="author"><strong>Mamadou S.</strong><span>Il y a 2 jours</span></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Service client au top, j'ai reçu mon colis en moins de 5 jours. Merci DBS !"</p>
+          <div class="author"><strong>Aïcha K.</strong><span>Il y a 1 semaine</span></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Je suis très satisfait de mon achat. Le paiement via Orange Money est simple et rapide."</p>
+          <div class="author"><strong>Issa T.</strong><span>Il y a 2 semaines</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="trust-section section">
+    <div class="container">
+      <div class="trust-grid">
+        <div class="trust-item">
+          <i class="fas fa-shipping-fast"></i>
+          <h4>Livraison rapide</h4>
+          <p>Dans tout le monde</p>
+        </div>
+        <div class="trust-item">
+          <i class="fas fa-lock"></i>
+          <h4>Paiement sécurisé</h4>
+          <p>DBS Payment</p>
+        </div>
+        <div class="trust-item">
+          <i class="fas fa-headset"></i>
+          <h4>Service client</h4>
+          <p>7j/7 - 24h/24</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter-content">
+        <div>
+          <h3>Restez informé de nos offres exclusives</h3>
+          <p>Inscrivez-vous à notre newsletter et recevez nos meilleures offres.</p>
+        </div>
+        <form class="newsletter-form" id="newsletter-form">
+          <input type="email" placeholder="Votre adresse e-mail" required>
+          <button type="submit" class="btn btn-primary">S'abonner</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <strong style="font-size:22px;color:#D4A017">DBS</strong>
+          <p>L'innovation au service de votre quotidien</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Liens utiles</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Catégories</h4>
+          <ul>
+            <li><a href="category.html?cat=electronique">Électronique</a></li>
+            <li><a href="category.html?cat=mode">Mode & Accessoires</a></li>
+            <li><a href="category.html?cat=maison">Maison & Lifestyle</a></li>
+            <li><a href="category.html?cat=promotions">Promotions</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Service client</h4>
+          <ul>
+            <li><a href="track-order.html">Suivre ma commande</a></li>
+            <li><a href="account.html">Mon compte</a></li>
+            <li><a href="#">Livraison & Retours</a></li>
+            <li><a href="#">Conditions générales</a></li>
+            <li><a href="#">Politique de confidentialité</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Digital Business Store. Tous droits réservés. | Burkina Faso • Afrique • Monde</p>
+        <div class="payment-methods">
+          <span>Orange Money</span>
+          <span>Moov Money</span>
+          <span>Wave</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/22770190710?text=Bonjour%20DBS%2C%20je%20souhaite%20des%20informations" 
+     class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contacter sur WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
